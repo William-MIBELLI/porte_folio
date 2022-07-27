@@ -13,117 +13,134 @@
 <body>
     
     <nav class="menu">
-        <div class="menu-label"></div>
-        <div class="menu-item">Formation</div>
-        <div class="menu-item">Projets</div>
-        <div class="menu-item">Mon CV</div>
-        <div class="menu-item">Contact</div>
+        <div class="menu-label">
+            <img src="./ressources/icon/label_icon.png" alt="" class="icon">
+        </div>
+        <a href="#formation"><div class="menu-item">Formation</div></a>
+        <a href="#projet"><div class="menu-item">Projets</div></a>
+        <a href=""><div class="menu-item">Mon CV</div></a>
+        <a href=""><div class="menu-item">Contact</div></a>
+        <div class="reso">
+            <img src="./ressources/icon/discord.png" alt="" class="icon">
+            <img src="./ressources/icon/google.png" alt="" class="icon">
+            <img src="./ressources/icon/linkedin.png" alt="" class="icon">
+        </div>
     </nav>
 
     <header class="pres">
         <div class="pres-content">
             <div class="pres-content-txt">
-                <h1>William MIBELLI</h1>
-                <h2 class="sub">Full stack WEB developpeur</h2>
-                <p>Actuellement en formation chez STUDI, je prépare un titre professionnel de niveau 5 (BAC + 2) dans le développement
+                <h1 id="titre">William MIBELLI</h1>
+                <h2 id="sub">Full stack WEB developpeur</h2>
+                <p id="intro">Actuellement en formation chez STUDI, je prépare un titre professionnel de niveau 5 (BAC + 2) dans le développement
                     WEB. Vous trouverez sur ce site ma progression dans les différents modules d'apprentissage ainsi que mes réalisations.
                 </p>
             </div>
             <div class="pres-content-pic">
-                <button class="btn">Découvrir</button>
+                <button class="btn" id="launcher">Découvrir</button>
             </div>
         </div>
     </header>
 
-    <article class="formation-container">
-        <div class="formation-card">
-            <div class="formation-header">
-                <h3>Projet n°1</h3>
-                <p>Ci-dessous une évaluation en cours de formation : désigner un site vitrine pour 
-                    une association 
-                </p>
-            </div>
-            <div class="formation-body">
-                <img src="./ressources/separator_bg.jpg" alt="" class="for-pic formation-pic1">
-                <img src="./ressources/digital_campus.png" alt="" class="for-pic formation-pic2">
-                <img src="./ressources/portrait_mini.jpg" alt="" class="for-pic formation-pic3">
-            </div>
-            <div class="formation-footer">
-                <div class="techno-icon">
-                    <img src="./ressources/icon/css-3.png" alt="" class="icon">
-                    <img src="./ressources/icon/html-5.png" alt="" class="icon">
-                    <img src="./ressources/icon/js.png" alt="" class="icon">
+    <main class="main">
+        <article id="projet" class="projet-container">
+            <div class="projet-card">
+                <div class="projet-header">
+                    <h3>Projet n°1</h3>
+                    <p>Ci-dessous une évaluation en cours de formation : désigner un site vitrine pour 
+                        une association 
+                    </p>
                 </div>
-                <div class="link">
-                    <img src="./ressources/icon/github.png" alt="" class="icon-link">
-                    <p>Github : lien github.com</p>
+                <div class="projet-body">
+                    <img src="./ressources/separator_bg.jpg" alt="" class="for-pic projet-pic1">
+                    <img src="./ressources/digital_campus.png" alt="" class="for-pic projet-pic2">
+                    <img src="./ressources/portrait_mini.jpg" alt="" class="for-pic projet-pic3">
                 </div>
-                <div class="link">
-                    <img src="./ressources/icon/http.png" alt="" class="icon-link">
-                    <p>URL : url du site</p>
-                </div>
-            </div>
-        </div>
-    </article>
-    <article class="formation-container for2">
-        <div class="formation-card">
-            <div class="formation-header">
-                <h3>Projet n°2</h3>
-                <p>Le contexte : programmer un mini-jeu en Javascript, jouable à 2 sur le navigateur 
-                </p>
-            </div>
-            <div class="formation-body" id="fb2">
-                <img src="./ressources/separator_bg.jpg" alt="" class="fb2-pic">
-                <img src="./ressources/digital_campus.png" alt="" class="fb2-pic">
-                <img src="./ressources/portrait_mini.jpg" alt="" class="fb2-pic">
-                <img src="./ressources/mohammad-rahmani-1VW6HLOQE5A-unsplash.jpg" alt="" class="fb2-pic">
-            </div>
-            <div class="formation-footer">
-                <div class="techno-icon">
-                    <img src="./ressources/icon/css-3.png" alt="" class="icon">
-                    <img src="./ressources/icon/html-5.png" alt="" class="icon">
-                    <img src="./ressources/icon/js.png" alt="" class="icon">
-                </div>
-                <div class="link">
-                    <img src="./ressources/icon/github.png" alt="" class="icon-link">
-                    <p>Github : lien github.com</p>
-                </div>
-                <div class="link">
-                    <img src="./ressources/icon/http.png" alt="" class="icon-link">
-                    <p>URL : url du site</p>
+                <div class="projet-footer">
+                    <div class="techno-icon">
+                        <img src="./ressources/icon/css-3.png" alt="" class="icon">
+                        <img src="./ressources/icon/html-5.png" alt="" class="icon">
+                        <img src="./ressources/icon/js.png" alt="" class="icon">
+                    </div>
+                    <div class="link">
+                        <img src="./ressources/icon/github.png" alt="" class="icon-link">
+                        <p>Github : lien github.com</p>
+                    </div>
+                    <div class="link">
+                        <img src="./ressources/icon/http.png" alt="" class="icon-link">
+                        <p>URL : url du site</p>
+                    </div>
                 </div>
             </div>
-        </div>
-    </article>
-    <article class="formation-container">
-        <div class="formation-card">
-            <div class="formation-header">
-                <h3>Projet n°3</h3>
-                <p>Entrainement personnel : refonte d'un site de location de gîtes de vacance
-                </p>
-            </div>
-            <div class="formation-body">
-                <img src="./ressources/separator_bg.jpg" alt="" class="for-pic formation-pic1">
-                <img src="./ressources/digital_campus.png" alt="" class="for-pic formation-pic2">
-                <img src="./ressources/portrait_mini.jpg" alt="" class="for-pic formation-pic3">
-            </div>
-            <div class="formation-footer">
-                <div class="techno-icon">
-                    <img src="./ressources/icon/css-3.png" alt="" class="icon">
-                    <img src="./ressources/icon/html-5.png" alt="" class="icon">
+        </article>
+        <article class="projet-container for2">
+            <div class="projet-card">
+                <div class="projet-header">
+                    <h3>Projet n°2</h3>
+                    <p>Le contexte : programmer un mini-jeu en Javascript, jouable à 2 sur le navigateur 
+                    </p>
                 </div>
-                <div class="link">
-                    <img src="./ressources/icon/github.png" alt="" class="icon-link">
-                    <p>Github : lien github.com</p>
+                <div class="projet-body" id="fb2">
+                    <img src="./ressources/separator_bg.jpg" alt="" class="fb2-pic">
+                    <img src="./ressources/digital_campus.png" alt="" class="fb2-pic">
+                    <img src="./ressources/portrait_mini.jpg" alt="" class="fb2-pic">
+                    <img src="./ressources/mohammad-rahmani-1VW6HLOQE5A-unsplash.jpg" alt="" class="fb2-pic">
                 </div>
-                <div class="link">
-                    <img src="./ressources/icon/http.png" alt="" class="icon-link">
-                    <p>URL : url du site</p>
+                <div class="projet-footer">
+                    <div class="techno-icon">
+                        <img src="./ressources/icon/css-3.png" alt="" class="icon">
+                        <img src="./ressources/icon/html-5.png" alt="" class="icon">
+                        <img src="./ressources/icon/js.png" alt="" class="icon">
+                    </div>
+                    <div class="link">
+                        <img src="./ressources/icon/github.png" alt="" class="icon-link">
+                        <p>Github : lien github.com</p>
+                    </div>
+                    <div class="link">
+                        <img src="./ressources/icon/http.png" alt="" class="icon-link">
+                        <p>URL : url du site</p>
+                    </div>
                 </div>
             </div>
-        </div>
-    </article>
+        </article>
+        <article class="projet-container">
+            <div class="projet-card">
+                <div class="projet-header">
+                    <h3>Projet n°3</h3>
+                    <p>Entrainement personnel : refonte d'un site de location de gîtes de vacance
+                    </p>
+                </div>
+                <div class="projet-body">
+                    <img src="./ressources/separator_bg.jpg" alt="" class="for-pic projet-pic1">
+                    <img src="./ressources/digital_campus.png" alt="" class="for-pic projet-pic2">
+                    <img src="./ressources/portrait_mini.jpg" alt="" class="for-pic projet-pic3">
+                </div>
+                <div class="projet-footer">
+                    <div class="techno-icon">
+                        <img src="./ressources/icon/css-3.png" alt="" class="icon">
+                        <img src="./ressources/icon/html-5.png" alt="" class="icon">
+                    </div>
+                    <div class="link">
+                        <img src="./ressources/icon/github.png" alt="" class="icon-link">
+                        <p>Github : lien github.com</p>
+                    </div>
+                    <div class="link">
+                        <img src="./ressources/icon/http.png" alt="" class="icon-link">
+                        <p>URL : url du site</p>
+                    </div>
+                </div>
+            </div>
+        </article>
 
+        <div class="formation" id="formation">
+            ICI CEST STUDI
+        </div>
+
+    </main>
+
+   
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js"></script>
     <script src="script.js"></script>
 </body>
 </html>
