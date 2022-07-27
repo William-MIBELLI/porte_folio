@@ -5,118 +5,124 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Dosis:wght@200;300&family=Lato:wght@100;300;400;900&family=Lobster&family=Major+Mono+Display&family=Mea+Culpa&family=Montserrat:wght@600&family=Mr+Dafoe&display=swap');
+        </style>
     <title>William MIBELLI</title>
 </head>
 <body>
+    
+    <nav class="menu">
+        <div class="menu-label"></div>
+        <div class="menu-item">Formation</div>
+        <div class="menu-item">Projets</div>
+        <div class="menu-item">Mon CV</div>
+        <div class="menu-item">Contact</div>
+    </nav>
 
-    <header class="container-presentation">
-        <div class="presentation">
-            <h1>William MIBELLI</h1>
-            <h3>Full-stack WEB développeur</h3>
-            <p>Actuellement en formation chez STUDI, je prépare un titre professionnel de niveau 5 (BAC + 2) dans le développement
-                WEB. Vous trouverez sur ce site ma progression dans les différents modules d'apprentissage ainsi que mes réalisations.
-            </p>
+    <header class="pres">
+        <div class="pres-content">
+            <div class="pres-content-txt">
+                <h1>William MIBELLI</h1>
+                <h2 class="sub">Full stack WEB developpeur</h2>
+                <p>Actuellement en formation chez STUDI, je prépare un titre professionnel de niveau 5 (BAC + 2) dans le développement
+                    WEB. Vous trouverez sur ce site ma progression dans les différents modules d'apprentissage ainsi que mes réalisations.
+                </p>
+            </div>
+            <div class="pres-content-pic">
+                <button class="btn">Découvrir</button>
+            </div>
         </div>
-        <nav class="links">
-            <button class="btn link-btn">Formation</button>
-            <button class="btn link-btn">Mon CV</button>
-            <button class="btn link-btn">Réalisation</button>
-            <button class="btn link-btn">Contact</button>
-        </nav>
     </header>
 
-    <main class="formation-container">
-        <div class="titre-div">
-            <div class="titre">
-                <img src="./ressources/studi.png" alt="" class="logo-formation">
-                <h2>Ma formation chez STUDI</h2>
-                <img src="./ressources/digital_campus.png" alt="" class="logo-formation">
-            </div class="titre">
-        </div>
-        <div class="front">
-            <h3>Le Front-End</h3>
-            <div class="list-container">
-                <ul>
-                    <li> <img src="./ressources/icon/check.png" alt="" class="done-icon"> HTML 5</li>
-                    <li><img src="./ressources/icon/check.png" alt="" class="done-icon"> CSS 3</li>
-                    <li><img src="./ressources/icon/check.png" alt="" class="done-icon"> BootStrap</li>
-                    <li><img src="./ressources/icon/check.png" alt="" class="done-icon"> Responsive Design</li>
-                    <li><img src="./ressources/icon/check.png" alt="" class="done-icon"> SASS / SCSS</li>
-                    <li><img src="./ressources/icon/check.png" alt="" class="done-icon"> GIT / GITHUB</li>
-                    <li> <img src="./ressources/icon/check.png" alt="" class="done-icon"> CMS Wordpress</li>
-                    <li><img src="./ressources/icon/check.png" alt="" class="done-icon"> Adobe XD</li>
-                    <li><img src="./ressources/icon/check.png" alt="" class="done-icon"> JavaScript</li>
-                    <li><img src="./ressources/icon/check.png" alt="" class="done-icon"> React.js</li>
-                </ul>
+    <article class="formation-container">
+        <div class="formation-card">
+            <div class="formation-header">
+                <h3>Projet n°1</h3>
+                <p>Ci-dessous une évaluation en cours de formation : désigner un site vitrine pour 
+                    une association 
+                </p>
             </div>
-        </div>
-        <div class="back">
-            <h3>Le Back-End</h3>
-            <div class="list-container">
-                <ul>
-                    <li> base de données SQL</li>
-                    <li> PHP</li>
-                    <li> Symfony</li>
-                    <li> React Native</li>
-                    <li> Plugin Wordpress</li>
-                </ul>
+            <div class="formation-body">
+                <img src="./ressources/separator_bg.jpg" alt="" class="for-pic formation-pic1">
+                <img src="./ressources/digital_campus.png" alt="" class="for-pic formation-pic2">
+                <img src="./ressources/portrait_mini.jpg" alt="" class="for-pic formation-pic3">
             </div>
-        </div>
-        <div class="info">
-            <h3>Plus de détails</h3>
-            <div class="info-content">
-                <p><img src="./ressources/icon/calendrier.png" alt="" class="info-icon">Mars - Décembre 22</p>
-                <p><img src="./ressources/icon/certification.png" alt="" class="info-icon">Titre professionnal niveau 5</p>
-            </div>
-            <h3 class="titre_fiche">La fiche complète</h3>
-            <button class="btn">go</button>
-        </div>
-    </main>
-
-    <div class="separator"></div>
-    <div class="projet">
-        <div class="projet-titre">
-            MES REALISATIONS
-        </div>
-        <div class="projet-content">
-            <div class="content-txt">
-                <p>Tout au long de ma formation, j'ai réalisé divers projets, plus ou moins aboutis, afin de pratiquer au maximum
-                    les notions evoqués dans les cours. <br> Vous trouverez ci-dessous quelques-une de ces réalisations ainsi que les moyens 
-                    mis en oeuvres et les technologies utilisées.
-                </p>              
-            </div>
-            <div class="content-box">
-                <div class="box">
-                    <div class="box-front">
-
-                    </div>
-                    <div class="box-back">
-                        
-                    </div>
+            <div class="formation-footer">
+                <div class="techno-icon">
+                    <img src="./ressources/icon/css-3.png" alt="" class="icon">
+                    <img src="./ressources/icon/html-5.png" alt="" class="icon">
+                    <img src="./ressources/icon/js.png" alt="" class="icon">
                 </div>
-                <div class="box">
-                    <div class="box-front">
-
-                    </div>
-                    <div class="box-back">
-                        
-                    </div>
+                <div class="link">
+                    <img src="./ressources/icon/github.png" alt="" class="icon-link">
+                    <p>Github : lien github.com</p>
                 </div>
-                <div class="box">
-                    <div class="box-front">
-
-                    </div>
-                    <div class="box-back">
-                        
-                    </div>
+                <div class="link">
+                    <img src="./ressources/icon/http.png" alt="" class="icon-link">
+                    <p>URL : url du site</p>
                 </div>
             </div>
         </div>
-    </div>
-
-    <footer class="footer">
-        MON FOOTER
-    </footer>
+    </article>
+    <article class="formation-container for2">
+        <div class="formation-card">
+            <div class="formation-header">
+                <h3>Projet n°2</h3>
+                <p>Le contexte : programmer un mini-jeu en Javascript, jouable à 2 sur le navigateur 
+                </p>
+            </div>
+            <div class="formation-body" id="fb2">
+                <img src="./ressources/separator_bg.jpg" alt="" class="fb2-pic">
+                <img src="./ressources/digital_campus.png" alt="" class="fb2-pic">
+                <img src="./ressources/portrait_mini.jpg" alt="" class="fb2-pic">
+                <img src="./ressources/mohammad-rahmani-1VW6HLOQE5A-unsplash.jpg" alt="" class="fb2-pic">
+            </div>
+            <div class="formation-footer">
+                <div class="techno-icon">
+                    <img src="./ressources/icon/css-3.png" alt="" class="icon">
+                    <img src="./ressources/icon/html-5.png" alt="" class="icon">
+                    <img src="./ressources/icon/js.png" alt="" class="icon">
+                </div>
+                <div class="link">
+                    <img src="./ressources/icon/github.png" alt="" class="icon-link">
+                    <p>Github : lien github.com</p>
+                </div>
+                <div class="link">
+                    <img src="./ressources/icon/http.png" alt="" class="icon-link">
+                    <p>URL : url du site</p>
+                </div>
+            </div>
+        </div>
+    </article>
+    <article class="formation-container">
+        <div class="formation-card">
+            <div class="formation-header">
+                <h3>Projet n°3</h3>
+                <p>Entrainement personnel : refonte d'un site de location de gîtes de vacance
+                </p>
+            </div>
+            <div class="formation-body">
+                <img src="./ressources/separator_bg.jpg" alt="" class="for-pic formation-pic1">
+                <img src="./ressources/digital_campus.png" alt="" class="for-pic formation-pic2">
+                <img src="./ressources/portrait_mini.jpg" alt="" class="for-pic formation-pic3">
+            </div>
+            <div class="formation-footer">
+                <div class="techno-icon">
+                    <img src="./ressources/icon/css-3.png" alt="" class="icon">
+                    <img src="./ressources/icon/html-5.png" alt="" class="icon">
+                </div>
+                <div class="link">
+                    <img src="./ressources/icon/github.png" alt="" class="icon-link">
+                    <p>Github : lien github.com</p>
+                </div>
+                <div class="link">
+                    <img src="./ressources/icon/http.png" alt="" class="icon-link">
+                    <p>URL : url du site</p>
+                </div>
+            </div>
+        </div>
+    </article>
 
     <script src="script.js"></script>
 </body>
