@@ -8,10 +8,14 @@ html{
     scroll-behavior: smooth;
 
 }
-/* .main{
+.main{
     display: none;
     opacity: 0;
-} */
+}
+#ancre{
+    height:1px;
+    margin-top: 60px;
+}
 h1{
     font-size: 6rem;
     color: white;
@@ -378,6 +382,7 @@ li{
     padding:20px 0;
     color: white;
     text-align: center;
+    display: none;
 }
 .footer p{
     font-weight: 500;

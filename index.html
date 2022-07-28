@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Dosis:wght@200;300&family=Lato:wght@100;300;400;900&family=Lobster&family=Major+Mono+Display&family=Mea+Culpa&family=Montserrat:wght@600&family=Mr+Dafoe&display=swap');
         </style>
@@ -36,16 +37,19 @@
                 </p>
             </div>
             <div class="pres-content-pic">
-                <button class="btn" id="launcher">Découvrir</button>
+                <button id="launcher" class="btn">En savoir +</button>
             </div>
         </div>
     </header>
 
+
+    
     <main class="main">
-        <article id="projet" class="projet-container">
+        <div id="ancre"></div>
+        <article id="projet" class="projet-container" >
             <div class="projet-card">
 
-                <div class="projet-pics">
+                <div class="projet-pics" data-aos="fade-right">
                     <img src="./ressources/separator_bg.jpg" alt="" class="for-pic projet-pic1">
                     <div class="col2">
                         <img src="./ressources/digital_campus.png" alt="" class="for-pic projet-pic2">
@@ -53,17 +57,17 @@
                     </div>
                 </div>
 
-                <div class="projet-txt">
+                <div class="projet-txt" data-aos="fade-up">
                     <h3>Projet n°1</h3>
                     <p>Ci-dessous une évaluation en cours de formation : désigner un site vitrine pour 
                         une association 
                     </p>
-                    <div class="techno-icon">
+                    <div class="techno-icon" data-aos="fade-right">
                         <img src="./ressources/icon/css-3.png" alt="" class="icon">
                         <img src="./ressources/icon/html-5.png" alt="" class="icon">
                         <img src="./ressources/icon/js.png" alt="" class="icon">
                     </div>
-                    <div class="links">
+                    <div class="links" data-aos="fade-left">
                         <div class="link">
                             <img src="./ressources/icon/github.png" alt="" class="icon-link">
                         </div>
@@ -78,7 +82,7 @@
       
         <div class="super-container">
             <div class="super-content">
-                <div class="super-txt">
+                <div class="super-txt" data-aos="fade-right">
                     <h3>Projet n°2</h3>
                     <p class="desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente ipsam minima dolorum doloribus quibusdam dolore voluptatibus illo ipsa quo, tenetur dolor dolores laboriosam, earum reprehenderit labore hic est sint explicabo.</p>
                     <div class="techno-icon">
@@ -88,13 +92,13 @@
                     </div>
 
                 </div>
-                <div class="super-pics">
-                    <img src="./ressources/portrait_mini.jpg" alt="" class="super-pic" id="pic1">
-                    <img src="./ressources/portrait_mini.jpg" alt="" class="super-pic" id="pic2">
-                    <img src="./ressources/portrait_mini.jpg" alt="" class="super-pic" id="pic3">
+                <div class="super-pics" data-aos="fade-left">
+                    <img src="./ressources/portrait_mini.jpg" alt="" class="super-pic" id="pic1" data-aos="fade-down">
+                    <img src="./ressources/portrait_mini.jpg" alt="" class="super-pic" id="pic2" data-aos="fade-left">
+                    <img src="./ressources/portrait_mini.jpg" alt="" class="super-pic" id="pic3" data-aos="fade-up">
                 </div>     
             </div>
-            <div class="super-footer">
+            <div class="super-footer" data-aos="fade-uo">
                 <div class="link">
                     <img src="./ressources/icon/github.png" alt="" class="icon-link">
                 </div>
@@ -107,7 +111,7 @@
         <div class="separator"></div>
 
         <div class="formation-container" id="formation">
-            <div class="formation-header">
+            <div class="formation-header" data-aos="fade-right">
                 <h3>Ma formation <img src="./ressources/studi-logo.png" alt="" class="studi-logo"></h3>
                 <!-- <p class="formation-pres">la formation s'étend de mars 2022 jusqu'a l'examen qui a lieu en décembre 2022 avec à la clé un titre
                      professionnel de niveau 5 en tant que 'Graduate developpeur WEB full-stack'.
@@ -121,7 +125,7 @@
                     <p>Titre professionnel de niveau 5 "<strong>Graduate Développeur WEB full-stack</strong>"</p>
                 </div>
             </div>
-            <div class="formation-body">
+            <div class="formation-body" data-aos="fade-left">
                 <div class="front">
                     <h4>Le Front-end</h4>
                     <ul>
@@ -141,21 +145,21 @@
                     <li>Création de plugin Wordpress</li>
                 </div>
             </div>
-            <button class="btn formation-btn">Programme complet</button>
+            <button class="btn formation-btn" data-aos="fade-up">Programme complet</button>
         </div>
 
     <div class="sep2"></div>
 
     <div class="contact" id="contact">
         <div class="contact-container">
-            <div class="contact-header">
+            <div class="contact-header" data-aos="fade-right">
                 <h3>Contact</h3>
                 <p>Actuellement en recherche de stage, vous pouvez me contactez par téléphone ou via les différents
                     réseaux renseignés.
                 </p>
                 <p><strong>06 25 90 01 55</strong></p>
                 <p>A bientôt !</p>
-                <div class="contact-body">
+                <div class="contact-body" data-aos="fade-up">
                     <img src="./ressources/icon/phone_icon.png" alt="" class="contact-icon">
                     <img src="./ressources/icon/discord.png" alt="" class="contact-icon">
                     <img src="./ressources/icon/google.png" alt="" class="contact-icon">
@@ -172,7 +176,9 @@
        <p>William MIBELLI, FRANCE</p>
    </footer>
 
-    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js"></script>
-    <script src="script.js"></script> -->
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
