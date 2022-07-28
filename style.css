@@ -21,9 +21,17 @@ h3{
     font-weight: 600;
     color: black;
 }
+p{
+    font-size: 1.6rem;
+    font-weight: 300;
+}
+#intro{
+    font-weight: 400;
+    color: #a4b0be;
+}
 .menu{
     width: 100%;
-    height: 60px;
+    height: 50px;
     background-color: white;
     display: flex;
     flex-direction: row;
@@ -32,6 +40,8 @@ h3{
     position: sticky;
     top: 0;
     z-index: 1000;
+    transition: all 0.5s ease-in-out;
+    border-bottom: 1px solid black;
 }
 .reso{
     justify-self: flex-end;
@@ -50,10 +60,6 @@ a:hover, .icon:hover, .icon-link:hover{
     transform: scale(1.05);
     transition: transform 0.2s ease;
 }
-.for-pic:hover, .fb2-pic:hover{
-    box-shadow: 5px 5px 30px black;
-    transition: all 0.3s ease-in;
-}
 .menu-item{
     font-size: 1.8rem;
     font-weight: 400;
@@ -61,15 +67,13 @@ a:hover, .icon:hover, .icon-link:hover{
     padding: 0 20px;
 }
 .pres{
-    height: 500px;
-    background-color: yellow;
+    height: 100vh;
     background-image: url('./ressources/mohammad-rahmani-1VW6HLOQE5A-unsplash.jpg');
     background-size: cover;
     background-position: center;
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top:30vh;
 }
 .pres-active{
     margin-top:0;
@@ -77,7 +81,7 @@ a:hover, .icon:hover, .icon-link:hover{
 }
 .pres-content{
     backdrop-filter: blur(8px);
-    background:rgb(255, 251, 251,0.2);
+    background:rgb(255, 251, 251,0.1);
     height:auto;
     width: 60%;
     display: flex;
@@ -91,6 +95,7 @@ a:hover, .icon:hover, .icon-link:hover{
 }
 .pres-content-txt h2{
     font-size: 1.6rem;
+    font-style: italic;
     color: #EA2027;
     margin-bottom: 40px;
 }
@@ -122,72 +127,43 @@ a:hover, .icon:hover, .icon-link:hover{
 .projet-container{
     width: auto;
     padding:0 10%;
-    color: #636e72;
     margin: 50px 0;
+    background-color: #f1f2f6;
 }
 .projet-card{
-    width: 90%;
-    margin: 0 auto;
-}
-.projet-card p{
-    font-size: 1.5rem;
-    font-weight: 300;
-}
-.projet-body{
-    width: auto;
-    margin: 20px auto;
-    margin-left: 0;
-    display: grid;
-    grid-template-areas:
-    "c1 c2"
-    "c1 c3"
-    ;
-    justify-content: center;
-    align-items: stretch;
-    gap: 10px;
-    grid-template-columns: 2fr 1fr;
-}
-.for-pic{
-    width: 70%;
-    box-shadow: 5px 5px 15px darkgray;
-    position: relative;
-    transition: all 0.3s ease-in;
-}
-.fb2-pic{
-    width: 20%;
-    height: 300px;
-    transition: all 0.3s ease-in;
-}
-.for-pic::before{
-    content: "TA GRAND MERE";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
+    width: 60%;
     height: 100%;
-    background-color: yellow;
-
-}
-.projet-pic1{
-    grid-area: c1;
-    height: 100%;
-    margin-left: auto;
-}
-.projet-pic2{
-    grid-area: c3;
-    margin-right: auto;
-}
-.projet-pic3{
-    grid-area: c2;
-    margin-right:auto;
-}
-#fb2{
+    margin: auto;
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
-    width: 100%;
 }
+.projet-pics{
+    display: grid;
+    gap: 10px;
+    grid-template-columns: 1fr 1fr;
+    margin-right: 10%;
+}
+.projet-footer{
+    background-color: #1B1464;
+    width: fit-content;
+
+}
+.projet-txt{
+    display: flex;
+    height: initial;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: left;
+    color: black;
+}
+.for-pic{
+    width: 100%;
+    transition: transform 0.3s ease-in-out;
+}
+.projet-pic1{
+    height: 100%;
+}
+
 .techno-icon{
     display: flex;
     justify-content: center;
@@ -210,7 +186,75 @@ a:hover, .icon:hover, .icon-link:hover{
 .icon-link{
     width:40px;
     padding-right:10px;
+    cursor: pointer;
 }
 .formation{
     height: 100vh;
+}
+.super-container{
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #747d8c;
+}
+.super-content{
+    width: 60%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+
+}
+.super-txt{
+    width:40%;
+    height: 80%;
+}
+.super-pics{
+    width: 50%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: center;
+    align-items: center;
+}
+.super-footer{
+    width: 100%;
+    height: 60px;
+    display: flex;
+    direction: row;
+    justify-content: center;
+}
+.super-pic{
+    width: 100%;
+    height: 100%;
+    transition: transform 0.3s ease-in-out;
+}
+#pic1{
+    position: relative;
+    top: 20%;
+    z-index: 500;
+}
+#pic2{
+    position: relative;
+    right: 20%;
+    top: 40%; 
+}
+#pic3{
+    position: relative;
+    left: 20%;
+    bottom: 10%;
+}
+.super-txt .desc{
+    margin: 30% 10% 10% 10%;
+    color: white;
+}
+.super-pic:hover, .for-pic:hover{
+    z-index: 1500;
+    transform: scale(1.1);
+    transition: transform 0.3s ease-in-out;
+}
+.super-footer .icon-link{
+    padding: 0 15px;
 }

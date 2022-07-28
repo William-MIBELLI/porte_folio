@@ -24,7 +24,7 @@ tl2
 window.addEventListener('load', () => { tl.play() })
 
 btn.addEventListener('click', () => { 
-    header.style.marginTop = '0'
+    header.style.height = '500px'
     header.style.transition= 'all 0.6s ease-in-out'
     main.style.display = 'block'
     main.style.opacity= '1'
