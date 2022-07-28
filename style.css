@@ -8,10 +8,10 @@ html{
     scroll-behavior: smooth;
 
 }
-.main{
+/* .main{
     display: none;
     opacity: 0;
-}
+} */
 h1{
     font-size: 6rem;
     color: white;
@@ -39,7 +39,7 @@ p,li{
     align-items: center;
     position: sticky;
     top: 0;
-    z-index: 1000;
+    z-index: 4000;
     transition: all 0.5s ease-in-out;
     border-bottom: 1px solid black;
 }
@@ -325,12 +325,7 @@ li{
     justify-content: space-around;
     background-color: #747d8c;
 }
-.footer{
-    height: 300px;
-    border-top: 1px solid black;
-    background-color: #747d8c;
-    margin-top: 50px;
-}
+
 .formation-btn{
     margin-top: 40px;
     width: 200px;
@@ -340,4 +335,51 @@ li{
     flex-direction: row;
     align-items: center;
     margin: 20px 0;
+}
+.contact{
+    background-color: #f1f2f6;
+    padding: 40px 0;
+}
+.contact p{
+    margin: 20px 0;
+    color: black
+}
+.contact h3{
+    color: #EA2027;
+}
+.contact-container{
+    width: 60%;
+    height: 100%;
+    margin: auto;
+}
+.contact-body{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    margin:40px 25% 0 25%;
+}
+
+.contact-icon{
+    width:50px;
+    transition: all 0.3s ease-in-out;
+}
+.contact-icon:hover{
+    transform: rotate(35deg) scale(1.2);
+    transition: all 0.3s ease-in-out;
+}
+.love-icon{
+    width: 40px;
+}
+.footer{
+    border-top: 1px solid black;
+    background-color:#1B1464;
+    margin-top: 50px;
+    padding:20px 0;
+    color: white;
+    text-align: center;
+}
+.footer p{
+    font-weight: 500;
+    margin-bottom: 3px;
 }
