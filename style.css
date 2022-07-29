@@ -166,9 +166,15 @@ a:hover, .icon:hover, .icon-link:hover{
     transition: transform 0.3s ease-in-out;
 }
 .projet-pic1{
-    height: 100%;
+    max-height: 600px;
 }
 
+.projet-pic2{
+    max-height: 400px;
+}
+.projet-pic3{
+    max-height: 300px;
+}
 .techno-icon{
     display: flex;
     justify-content: center;
@@ -255,7 +261,11 @@ a:hover, .icon:hover, .icon-link:hover{
 }
 .super-pic:hover, .for-pic:hover{
     z-index: 1500;
-    transform: scale(1.1);
+    transform: scale(1.05);
+    transition: transform 0.3s ease-in-out;
+}
+#pic1:hover, #pic2:hover, #pic3:hover{
+    transform: scale(1.05);
     transition: transform 0.3s ease-in-out;
 }
 .super-footer .icon-link{
