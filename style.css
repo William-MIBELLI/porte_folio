@@ -6,7 +6,17 @@ html{
     font-size: 62.5%;
     font-family: 'Lato', sans-serif;
     scroll-behavior: smooth;
-
+    overflow-x: hidden;
+}
+.burger-div{
+    position: fixed;
+    display: none;
+    top:25px;
+    right:25px;
+    z-index: 5000;
+}
+.burger-img{
+    width:60px;
 }
 .main{
     display: none;
@@ -57,6 +67,11 @@ p,li{
     margin-right: auto;
     margin-left: 10px;
     cursor: pointer;
+    transition : all 0.3s ease-in-out;
+}
+.menu-label:hover{
+    transform: rotate(360deg);
+    transition : all 0.3s ease-in-out;
 }
 a, a:visited{
     text-decoration: none;
@@ -130,8 +145,7 @@ a:hover, .icon:hover, .icon-link:hover{
     transform: scale(1.02);
 }
 .projet-container{
-    width: auto;
-    padding:0 10%;
+    width: 100%;
     margin: 50px 0;
     background-color: #f1f2f6;
 }
@@ -381,7 +395,7 @@ li{
     cursor: pointer;
 }
 .contact-icon:hover{
-    transform: rotate(35deg) scale(1.2);
+    transform: rotate(360deg) scale(1.2);
     transition: all 0.3s ease-in-out;
 }
 .love-icon{
@@ -399,4 +413,59 @@ li{
 .footer p{
     font-weight: 500;
     margin-bottom: 3px;
+}
+@media screen and (max-width:1200px){
+    .projet-card, .super-content, .contact-header, .pres-content{
+        width: 80%;
+    }
+    .contact-header{
+        margin: auto;
+    }
+    .contact-body{
+        margin:auto;
+        margin-top: 40px;
+    }
+}
+@media screen and (max-width:900px){
+    .formation-body{
+        width:90%;
+    }
+}
+@media screen and (max-width:700px){
+    .projet-card, .super-content, .contact-header, .pres-content{
+        width: 95%;
+    }
+    .pres-content{
+        flex-direction: column;
+        width: 50%;
+        align-items: center;
+    }
+    .pres-content-txt, .pres-content-pic{
+        width: 90%;
+        padding: 5px;
+    }
+}
+@media screen and (max-width:600px){
+    .menu{
+        display: none;
+    }
+    .menu-item{
+        padding-top: 15px;
+    }
+    .reso{
+        width: auto;
+        margin: 40px auto;
+    }
+    h1{
+        font-size: 4rem;
+    }
+
+}
+@media screen and (max-width:400px){
+    .projet-card, .super-content{
+        flex-direction: column;
+    }
+    .super-txt, .contact-container{
+        width: 90%;
+    }
 }

@@ -7,6 +7,7 @@ let btn = document.querySelector('#launcher')
 let main = document.querySelector('.main')
 let header = document.querySelector('.pres')
 let footer = document.querySelector('.footer')
+let burger = document.querySelector('#burger')
 
 
 let tl = new TimelineMax({paused: true})
@@ -35,4 +36,18 @@ btn.addEventListener('click', () => {
         easing: 'ease',
         duration: 800
     })
+    if(document.body.clientWidth <= 600){
+        burger.style.display = 'block'
+    }
+})
+burger.addEventListener('click', () => {
+    if(menu.style.display == 'flex'){
+        menu.style.display = 'none'
+    }else{
+        menu.style.display = 'flex'
+        menu.style.flexDirection = 'column'
+        menu.style.height = 'auto'
+        menu.style.justifyContent = 'center'
+        menu.style.alignItem = 'center'
+    }
 })
